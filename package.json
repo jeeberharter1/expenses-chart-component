@@ -1,0 +1,20 @@
+{
+    "name": "chartjs-example",
+    "version": "1.0.0",
+    "license": "MIT",
+    "homepage": "https://jeeberharter1.github.io/expenses-chart-component",
+    "scripts": {
+        "dev": "parcel public/index.html",
+        "build": "parcel build public/index.html",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "devDependencies": {
+        "gh-pages": "^5.0.0",
+        "parcel": "^2.6.2"
+    },
+    "dependencies": {
+        "@cubejs-client/core": "^0.31.0",
+        "chart.js": "^4.0.0"
+    }
+}

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans:wght@400;700&display=swap');
+
+@media screen and (max-width: 335px) {
+    .title__primary {
+        font-size: 1.1rem;
+    }
+
+    .spending__current__amount {
+        font-size: 1.3rem;
+    }
+
+    .title__secondary {
+        font-size: 0.8rem;
+    }
+
+    .balance__amount {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 335px) {
+    .title__primary {
+        font-size: 1.6rem;
+    }
+
+    .spending__current__amount {
+        font-size: 2.1rem;
+    }
+
+    .title__secondary {
+        font-size: 0.9rem;
+    }
+
+    .balance__amount {
+        font-size: 1.5rem;
+    }
+}
+
+/* 
+    || Global Variables
+*/
+
+:root {
+    --color-primary: hsl(10, 79%, 65%);
+    --color-bar-primary: hsl(186, 34%, 60%);
+    --color-font-primary: hsl(25, 47%, 15%);
+    --color-font-secondary: hsl(28, 10%, 53%);
+    --color-background-primary: hsl(27, 66%, 92%);
+    --color-background-secondary: hsl(33, 100%, 98%);
+
+    --font-family: 'DM Sans', sans-serif;
+
+    --font-size-normal: 18px;
+
+    --font-semi-bold: 400;
+    --font-bold: 700;
+}
+
+/* 
+    || Global Styles
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100lvh;
+    background-color: var(--color-background-primary);
+}
+
+.main {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+/* 
+    || Classes
+*/
+
+.title__primary {
+    color: var(--color-font-primary);
+    font-weight: 700;
+}
+
+.title__secondary {
+    font-weight: 400;
+    color: var(--color-font-secondary);
+}
+
+.section {
+    padding: 1.2rem 1rem;
+}
+
+/* 
+    || Balance Section
+*/
+
+.balance {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-background-secondary);
+}
+
+.balance__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.balance__data > .title__secondary {
+    color: var(--color-background-secondary);
+}
+
+.balance__amount {
+    font-weight: 700;
+}
+
+.balance__logo {
+    width: 60px;
+}
+
+/* 
+    || Spending Section
+*/
+
+.spending {
+    background-color: var(--color-background-secondary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+hr {
+    border: 1px solid var(--color-background-primary);
+}
+
+.spending__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+}
+
+.spending__current > .title__secondary {
+    margin-bottom: 0.5rem;
+}
+
+.spending__current__amount {
+    font-weight: 700;
+    color: var(--color-font-primary);
+}
+
+.spending__next {
+    text-align: right;
+}
+
+.spending__next__percent {
+    color: var(--color-font-primary);
+    font-weight: 700;
+}
